@@ -1,0 +1,79 @@
+<!--  
+  NOTICE!
+  PARENT > CHILD BLOCKS - vertical margins overlap, se suprapun . greater-wins
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Global Gallery | CSS</title>
+
+  <style>
+    body {
+      background-color: #222;
+    }
+    img {
+      width: 200px;
+      border: 20px solid white;
+      margin-right: -122px;
+      margin-left:  -122px;
+
+      /* ------ new -------*/
+      transform: rotate(45deg);
+      /* ------ new -------*/
+    }
+
+
+    #gallery {
+      margin-top: 200px;
+      /*border: 1px solid red;*/
+      text-align: center;
+    }
+
+    .i-1 {
+      /* ------ new -------*/
+      transform: rotate(-40deg);
+      /* ------ new -------*/
+      border-color: #999999;
+    }
+    .i-2 {
+      /* ------ new -------*/
+      transform: rotate(-20deg);
+      /* ------ new -------*/
+      border-color:#b3b3b3 ;
+    }
+    .i-3 {
+      /* ------ new -------*/
+      transform: rotate(0deg);
+      /* ------ new -------*/
+      border-color: #cccccc ;
+    }
+    .i-4 {
+      /* ------ new -------*/
+      transform: rotate(20deg);
+      /* ------ new -------*/
+      border-color: #e6e6e6;
+    }
+    .i-5 {
+      /* ------ new -------*/
+      transform: rotate(40deg);
+      /* ------ new -------*/
+    }
+  </style>
+</head>
+<body>
+  <p id="gallery">
+    <img class="i-1" src="https://i.picsum.photos/id/67/400/600.jpg?hmac=3QyWQN2FJKqiqYrCVqCmOOo6-ex-w_4KJCwuhgT3O2o" alt="">
+    <img class="i-2" src="https://i.picsum.photos/id/867/400/600.jpg?hmac=GPlIA3YoKkscytaskXsG1rykhyzPhHD7Mdl44CPIQso" alt="">
+    <img class="i-3" src="https://i.picsum.photos/id/803/400/600.jpg?hmac=0N6B_KgA2N1O9f-_3ZbN81DJV3lYlzfCDZ45bmSruko" alt="">
+    <img class="i-4" src="https://i.picsum.photos/id/337/400/600.jpg?hmac=ax1UVVSNNU-w__FMbkLpN9ssRbwpcvzx6fPgefJ2mdc" alt="">
+    <img class="i-5" src="https://i.picsum.photos/id/929/400/600.jpg?hmac=1nlUusN2UINLeRyg5QY9kxorn35pabELuBQn1UwVMW0" alt="">
+  </p>
+</body>
+</html>
+
+<!--  
+HW1: 
+reverse the rotation order
+-->
